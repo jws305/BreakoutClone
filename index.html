@@ -16,25 +16,22 @@
   <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
+  <script type="text/javascript" src="game.js"></script>
+  <script type="text/javascript" src="title.js"></script>
+  <script type="text/javascript" src="running.js"></script>
+  <script type="text/javascript">
+    function init() {
+        Game.start();
+    }
+  </script>
 </head>
 
-<body>
+<body onload="init()">
   <div>
-    <header>
-      <h1>index</h1>
-    </header>
-    <nav>
-      <p><a href="/">Home</a></p>
-      <p><a href="/contact">Contact</a></p>
-    </nav>
-
-    <div>
-      
-    </div>
-
-    <footer>
-     <p>&copy; Copyright  by john</p>
-    </footer>
+    <canvas id="GameCanvas">Your browser does not support canvas.</canvas>
   </div>
+  
+  
 </body>
 </html>
